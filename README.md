@@ -160,12 +160,17 @@ Repositorio alvo: `https://github.com/Kaua-KGzin/Boot-Py`
 
 Fluxo recomendado:
 ```bash
-git init
-git branch -M main
-git remote add origin https://github.com/Kaua-KGzin/Boot-Py.git
+git clone https://github.com/Kaua-KGzin/Boot-Py.git
+cd Boot-Py
+git checkout -b feat/minha-melhoria
 git add .
-git commit -m "feat(estrutura): projeto robusto em pt_br com docs e qualidade"
-git push -u origin main
+git commit -m "feat(readme): melhora fluxo recomendado para clonagem"
+git push -u origin feat/minha-melhoria
+```
+
+Exemplo de commit em PT-BR:
+```bash
+git commit -m "fix(backup): corrige validacao de checksum na copia"
 ```
 
 ## Licenca
