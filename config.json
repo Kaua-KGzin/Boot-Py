@@ -1,0 +1,30 @@
+{
+  "backup_dir": "./backups",
+  "source_dirs": [
+    "./documents",
+    "./projects"
+  ],
+  "max_retries": 3,
+  "retry_delay_seconds": 1.0,
+  "compression": true,
+  "schedule_time": "02:00",
+  "retention_count": 7,
+  "exclude_patterns": [
+    "*.tmp",
+    "*.log",
+    "__pycache__/*"
+  ],
+  "log_file": "./backup.log",
+  "log_level": "INFO",
+  "hash_algorithm": "sha256",
+  "s3": {
+    "enabled": false,
+    "bucket": "",
+    "prefix": "backups",
+    "region_name": "",
+    "endpoint_url": "",
+    "profile_name": "",
+    "storage_class": "STANDARD",
+    "acl": ""
+  }
+}
